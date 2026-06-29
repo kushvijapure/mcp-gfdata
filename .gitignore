@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+session_state.json
+captured_requests.json
+claude_desktop_config.json
+gfdata_claude_config.json
