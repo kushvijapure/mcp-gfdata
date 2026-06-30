@@ -1,9 +1,17 @@
 """
 GF Data MCP Server — connects Claude Desktop to gfdata.sigmify.com.
 
-This is an aggregated M&A comps database. The API returns deal statistics
-(TEV/EBITDA, TEV/Rev, margins, etc.) grouped by year/quarter or by deal-size
-(TEV) range, with filters for industry, business category, deal type, etc.
+GF Data is a professional M&A comps database. The API returns aggregated deal
+statistics (TEV/EBITDA, TEV/Revenue, EBITDA margins, deal count, etc.) grouped
+by year/quarter or by deal-size (TEV) range, with filters for NAICS industry,
+business category, deal type (PE vs. Corporate), seller type, and database tier.
+
+Tools exposed:
+    query_comps_by_year      — valuation multiples grouped by year or quarter
+    query_comps_by_tev_range — multiples grouped by deal size bucket
+    list_industries          — search NAICS codes for use as filters
+    list_business_categories — GF Data sector list with transaction counts
+    get_available_metrics    — all available data columns and internal keys
 
 Start:
     .venv/bin/python server.py
