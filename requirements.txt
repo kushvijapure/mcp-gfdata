@@ -1,5 +1,5 @@
-mcp[cli]==1.28.1
-httpx==0.28.1
-python-dotenv==1.2.2
-playwright==1.61.0
-cryptography==49.0.0
+mcp[cli]==1.28.1          # MCP server framework
+httpx==0.28.1             # Async HTTP client for GF Data API calls
+python-dotenv==1.2.2      # Loads GFDATA_EMAIL / GFDATA_PASSWORD from .env
+playwright==1.61.0        # Headless Chromium — used once for first-time login
+cryptography==49.0.0      # RSA-PKCS1v15 encryption for GF Data auth handshake
