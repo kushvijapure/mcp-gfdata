@@ -4,7 +4,7 @@ set -e
 INSTALL_DIR="$HOME/gfdata-mcp"
 CLAUDE_CONFIG="$HOME/Library/Application Support/Claude/claude_desktop_config.json"
 
-echo "=== GF Data MCP Setup ==="
+echo "=== GF Data MCP Setup — installs deps, logs in, and wires up Claude Desktop ==="
 echo ""
 
 # ── 1. Python 3.10+ check ──────────────────────────────────────────────────
