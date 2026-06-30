@@ -8,6 +8,10 @@ Login flow:
   4. GET /ws/streamService/initAppData  → user profile (via Playwright, first run only)
 
 Subsequent starts: load cached session_state.json; re-call generateToken on 401.
+
+Credentials are read from GFDATA_EMAIL and GFDATA_PASSWORD environment variables
+(set in .env or passed via Claude Desktop config). session_state.json is written
+to the same directory as this file and is gitignored.
 """
 
 import asyncio
